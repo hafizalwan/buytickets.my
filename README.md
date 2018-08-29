@@ -12,4 +12,4 @@ This application is using the following :
 
 * Using bootstrap-sass version 3.3.7
 
-This app is developed by <a href="https:www.hafizalwan.com">Hafiz Alwan</a>
+This app is developed by <a href="https://www.hafizalwan.com">Hafiz Alwan</a>
