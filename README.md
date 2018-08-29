@@ -2,14 +2,16 @@
 
 This application is using the following :
 
-* Using Ruby version 2.5.1
+* Ruby version 2.5.1
 
-* Using Rails version 5.2.1
+* Rails version 5.2.1
 
-* Using SQLite version 3.x for development
+* SQLite version 3.x for development
 
-* Using MySQL for production on AWS
+* MySQL for production on AWS
 
-* Using bootstrap-sass version 3.3.7
+* materialize-sass version 1.0.0.rc1
+
+* font-awesome-sass version 5.2.0
 
 This app is developed by <a href="https://www.hafizalwan.com">Hafiz Alwan</a>
