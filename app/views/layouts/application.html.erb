@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Buyticketsmy</title>
+    <title>BuyTickets.my | Langkawi Island | Mangrove Tour | Cable Car | Xtreme Park | Skytrex Langkawi | Langkawi Popular Activities</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,10 +10,13 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <%= render 'shared/navbar' %>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
+    <%= yield %>
 
   </body>
 </html>
