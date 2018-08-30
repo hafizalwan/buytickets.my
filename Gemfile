@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.1'
 gem 'sqlite3'
 gem 'devise', '~> 4.5'
 gem 'materialize-sass', '~> 1.0.0.rc1'
-gem 'font-awesome-sass', '~> 5.2'
+gem 'font-awesome-sass', '~> 5.3.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
