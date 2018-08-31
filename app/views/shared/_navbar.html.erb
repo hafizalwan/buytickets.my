@@ -2,7 +2,6 @@
     <nav class="grey lighten-5">
         <div class="container">
             <div class="nav-wrapper">
-                <!--<a href="index.html" class="brand-logo"><img class="img-logo" src="app/assets/images/main-logo-web.png"></a> -->
                 <a href="index.html" class="brand-logo"><%= image_tag('weblogo/main-logo-web.png', class: 'img-logo') %></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="popular.html">Popular Activities</a></li>
@@ -13,16 +12,6 @@
                     <% else %>
                       <li><%= link_to 'LOGOUT', destroy_user_session_path, class: 'waves-effect waves-light btn-small grey darken-4 white-text', method: :delete %></li>
                     <% end %>
-                    <li>
-                      <%= link_to 'https://www.facebook.com/buyticketsmy' do %>
-                        <%= icon('fab', 'facebook') %>
-                      <% end %>
-                    </li>
-                    <li>
-                      <%= link_to 'https://www.instagram.com' do %>
-                        <%= icon('fab', 'instagram') %>
-                      <% end %>
-                    </li>
                     <!-- <li><a href="https://www.facebook.com/buyticketsmy"><i class="fab fa-facebook"></i></a></li> -->
                     <!-- <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li> -->
                 </ul>
