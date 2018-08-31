@@ -1,7 +1,22 @@
+<!-- Dropdown Desktop -->
+<ul id="dropdown-lg" class="dropdown-content">
+  <li><a href="#">Profile</li>
+  <li><a href="#">Reservation</li>
+  <li><li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li></li>
+</ul>
+<!-- Dropdown Mobile -->
+<ul id="dropdown-md" class="dropdown-content">
+  <li><a href="#">One</li>
+  <li><a href="#">Two</li>
+  <li><li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li></li>
+</ul>
 <div class="navbar-fixed">
     <nav class="grey lighten-5">
         <div class="container">
-            <div class="nav-wrapper"> 
+            <div class="nav-wrapper">
+
+              <!-- Please change the logo link path -->
+
                 <a href="index.html" class="brand-logo"><%= image_tag('weblogo/main-logo-web.png', class: 'img-logo') %></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="popular.html">Popular Activities</a></li>
@@ -10,8 +25,11 @@
                     <% if (!user_signed_in?) %>
                       <li><%= link_to 'LOGIN', new_user_session_path, class: 'waves-effect waves-light btn-small red white-text' %></li>
                     <% else %>
-                      <li><%= link_to 'LOGOUT', destroy_user_session_path, class: 'waves-effect waves-light btn-small grey darken-4 white-text', method: :delete %></li>
+                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown-lg"><%= current_user.email %><i class="material-icons right">arrow_drop_down</i></a></li>
                     <% end %>
+
+                    <!-- Please add a clickable icons -->
+
                     <!-- <li><a href="https://www.facebook.com/buyticketsmy"><i class="fab fa-facebook"></i></a></li> -->
                     <!-- <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li> -->
                 </ul>
@@ -37,7 +55,9 @@
               <% if (!user_signed_in?) %>
                 <%= link_to 'LOGIN', new_user_session_path, class: 'waves-effect waves-light btn-small red white-text' %>
               <% else %>
-                <%= link_to 'LOGOUT', destroy_user_session_path, class: 'waves-effect waves-light btn-small grey darken-4 white-text', method: :delete %>
+
+              <!-- Try make a button with arrow down icon -->
+                <a class="dropdown-trigger mobile-dropdown" href="#!" data-target="dropdown-md">Profile<i class="material-icons right">account_circle</i></a>
               <% end %>
             </div>
         </div><!-- row -->
