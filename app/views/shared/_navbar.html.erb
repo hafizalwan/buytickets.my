@@ -4,10 +4,10 @@
   <li><a href="#">Reservation</li>
   <li><li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li></li>
 </ul>
-<!-- Dropdown Mobile -->
-<ul id="dropdown-md" class="dropdown-content">
-  <li><a href="#">One</li>
-  <li><a href="#">Two</li>
+<!-- Sidenav Menu -->
+<ul id="mobile-menu" class="sidenav">
+  <li><a href="#">Profile</li>
+  <li><a href="#">Reservation</li>
   <li><li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li></li>
 </ul>
 <div class="navbar-fixed">
@@ -55,9 +55,10 @@
               <% if (!user_signed_in?) %>
                 <%= link_to 'LOGIN', new_user_session_path, class: 'waves-effect waves-light btn-small red white-text' %>
               <% else %>
+              <a href="#" data-target="mobile-menu" class="sidenav-trigger btn-small btn-flat"><i class="material-icons center">menu</i></a>
 
               <!-- Try make a button with arrow down icon -->
-                <a class="dropdown-trigger mobile-dropdown" href="#!" data-target="dropdown-md">Dropdown<i class="material-icons right">account_circle</i></a>
+                <!-- <a class="sidenav-trigger" href="#!" data-target="mobile-menu"><i class="material-icons right">menu</i></a> -->
               <% end %>
             </div>
         </div><!-- row -->
