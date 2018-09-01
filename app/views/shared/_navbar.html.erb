@@ -22,7 +22,11 @@
                     <% if (!user_signed_in?) %>
                       <li><%= link_to 'LOGIN', new_user_session_path, class: 'waves-effect waves-light btn-small red white-text' %></li>
                     <% else %>
-                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown-lg"><%= current_user.fullname %><i class="material-icons right">arrow_drop_down</i></a></li>
+                      <li>
+                        <a class="dropdown-trigger" href="#!" data-target="dropdown-lg">
+                          <%= image_tag avatar_url(current_user), class: "circle avatar_small responsive-img" %>&nbsp;
+                          <%= current_user.fullname %><i class="material-icons right">arrow_drop_down</i></a>
+                      </li>
                     <% end %>
 
                     <!-- Please add a clickable icons -->
