@@ -4,7 +4,7 @@
         <div class="col l6 s12">
           <h5 class="white-text">About Us</h5>
           <p class="grey-text text-lighten-4">
-              We at <a href="https://www.buytickets.my">buytickets.my</a> keep our customers experience at the top of our priority!
+              We at <%= link_to 'BuyTickets', 'https://buytickets.my' %> keep our customers experience at the top of our priority!
               Offering only the best things that we ourselves believe better than any other place you'd pay for your vacation.
               Leave all the hassle to look for affordable price to us, we are really good at it.
           </p>
@@ -53,8 +53,13 @@
                interval: 6000
             });
 
-            //Initiate dropdown
+            //Initiate Dropdown
             $(".dropdown-trigger").dropdown();
+
+            //Initiate Sidenav
+            $('.sidenav').sidenav({
+              edge: 'right'
+            });
 
         });
     </script>
