@@ -1,14 +1,14 @@
 <!-- Dropdown Desktop -->
 <ul id="dropdown-lg" class="dropdown-content">
-  <li><a href="#">Profile</li>
-  <li><a href="#">Reservation</li>
-  <li><li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li></li>
+  <li><%= link_to 'Profile', edit_user_registration_path %></li>
+  <li><a href="#">Reservation</a></li>
+  <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li>
 </ul>
 <!-- Sidenav Menu -->
 <ul id="mobile-menu" class="sidenav">
-  <li><a href="#">Profile</li>
-  <li><a href="#">Reservation</li>
-  <li><li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li></li>
+  <li><%= link_to 'Profile', edit_user_registration_path %></li>
+  <li><a href="#">Reservation</a></li>
+  <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li>
 </ul>
 <div class="navbar-fixed">
     <nav class="grey lighten-5">
@@ -22,7 +22,7 @@
                     <% if (!user_signed_in?) %>
                       <li><%= link_to 'LOGIN', new_user_session_path, class: 'waves-effect waves-light btn-small red white-text' %></li>
                     <% else %>
-                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown-lg"><%= current_user.email %><i class="material-icons right">arrow_drop_down</i></a></li>
+                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown-lg"><%= current_user.fullname %><i class="material-icons right">arrow_drop_down</i></a></li>
                     <% end %>
 
                     <!-- Please add a clickable icons -->
