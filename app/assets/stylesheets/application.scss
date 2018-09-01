@@ -49,6 +49,9 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Magra|Yellowtail');
 
+// Toastr
+@import "toastr";
+
 // Custom Styling
 body {
     background-color: #eee;
@@ -71,6 +74,22 @@ nav {
       color: #000;
     }
   }
+}
+
+.avatar_small {
+  width: 28px;
+}
+
+.avatar_medium {
+  width: 48px;
+}
+
+.avatar_large {
+  width: 68px;
+}
+
+.avatar_full {
+  width: 100%;
 }
 
 .img-logo {
