@@ -63,13 +63,14 @@ Rails.application.configure do
 
   # Send transactional emails with gmail
   # For production do this is app/config/environments/production.rb
+  # Do not commit with password
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
     port: 587,
     enable_starttls_auto: true,
     authentication: 'plain',
-    user_name: 'buyticketsmarketing@gmail.com',
-    password: 'PASSWORD'
+    user_name: ENV["MAILER_EMAIL"],
+    password: ENV["MAILER_PASSWORD"]
   }
 end
