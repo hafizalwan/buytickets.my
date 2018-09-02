@@ -70,6 +70,6 @@ Rails.application.configure do
     enable_starttls_auto: true,
     authentication: 'plain',
     user_name: 'buyticketsmarketing@gmail.com',
-    password: 'A(Sc)^6R5q;yA?:_'
+    password: 'PASSWORD'
   }
 end
