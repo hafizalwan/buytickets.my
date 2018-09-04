@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable
 
   validates :fullname, presence: true, length: {maximum: 15}
+
+  has_many :activities
 end
