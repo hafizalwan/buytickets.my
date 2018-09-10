@@ -30,4 +30,9 @@ new associations.</p>
 * Locations map & title
 * Base price, MY adult & child price, International adult & child price.
 
+<h6>Please add to activity model: Non nationality prices</h6>
+
+* adult_price
+* child_price
+
 This app is developed by <a href="https://www.hafizalwan.com">Hafiz Alwan</a>
