@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'activities/create'
   get 'activities/update'
   get 'activities/show'
+  get 'activities/listing'
   get 'activities/details'
   get 'activities/photos'
   get 'activities/location'
