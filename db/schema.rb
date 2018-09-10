@@ -10,7 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_04_114453) do
+ActiveRecord::Schema.define(version: 2018_09_10_092413) do
+
+  create_table "activities", force: :cascade do |t|
+    t.string "name"
+    t.text "about"
+    t.text "details_1"
+    t.text "details_2"
+    t.text "how_to_directions"
+    t.text "how_to_seats"
+    t.text "activity_info"
+    t.text "refund_policies"
+    t.string "location_map"
+    t.string "location_title"
+    t.integer "base_price"
+    t.integer "my_adult_price"
+    t.integer "my_child_price"
+    t.integer "int_adult_price"
+    t.integer "int_child_price"
+    t.boolean "is_base_price"
+    t.boolean "is_my_adult"
+    t.boolean "is_my_child"
+    t.boolean "is_int_adult"
+    t.boolean "is_int_child"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_activities_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
