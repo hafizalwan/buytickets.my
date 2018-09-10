@@ -30,7 +30,7 @@ new associations.</p>
 * Locations map & title
 * Base price, MY adult & child price, International adult & child price.
 
-<h6>Please add to activity model: Non nationality prices</h6>
+<strong>On Sept 11 2018, Please add to activity model: Non nationality prices</strong>
 
 * adult_price
 * child_price
