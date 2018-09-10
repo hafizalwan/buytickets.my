@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  about: MyText
+  details_1: MyText
+  details_2: MyText
+  how_to_directions: MyText
+  how_to_seats: MyText
+  activity_info: MyText
+  refund_policies: MyText
+  location_map: MyString
+  location_title: MyString
+  base_price: 1
+  my_adult_price: 1
+  my_child_price: 1
+  int_adult_price: 1
+  int_child_price: 1
+  is_base_price: false
+  is_my_adult: false
+  is_my_child: false
+  is_int_adult: false
+  is_int_child: false
+  user: one
+
+two:
+  name: MyString
+  about: MyText
+  details_1: MyText
+  details_2: MyText
+  how_to_directions: MyText
+  how_to_seats: MyText
+  activity_info: MyText
+  refund_policies: MyText
+  location_map: MyString
+  location_title: MyString
+  base_price: 1
+  my_adult_price: 1
+  my_child_price: 1
+  int_adult_price: 1
+  int_child_price: 1
+  is_base_price: false
+  is_my_adult: false
+  is_my_child: false
+  is_int_adult: false
+  is_int_child: false
+  user: two
