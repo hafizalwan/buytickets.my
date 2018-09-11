@@ -12,11 +12,15 @@ class CreateActivities < ActiveRecord::Migration[5.2]
       t.string :location_map
       t.string :location_title
       t.integer :base_price
+      t.integer :adult_price
+      t.integer :child_price
       t.integer :my_adult_price
       t.integer :my_child_price
       t.integer :int_adult_price
       t.integer :int_child_price
       t.boolean :is_base_price
+      t.boolean :is_adult_price
+      t.boolean :is_child_price
       t.boolean :is_my_adult
       t.boolean :is_my_child
       t.boolean :is_int_adult
