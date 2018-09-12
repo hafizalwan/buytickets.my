@@ -1,2 +1,30 @@
-<h1>Activities#new</h1>
-<p>Find me in app/views/activities/new.html.erb</p>
+<!-- START CREATE ACTIVITY PAGE -->
+<div class="row">
+  <div class="col s12">
+
+    <div class="card-panel">
+      <div class="card-content">
+        <h5 class="center">Create your new activity</h5>
+        <p class="center">Please enter activity name and select the price category for your activity</p>
+      </div><!-- card-content -->
+      <div class="card-content">
+        <div class="row">
+          <%= form_for @activity, html: {class: "col s12"} do |f| %>
+            <div class="input-field col s12">
+              <%= f.text_field :name, id: "activity-name", type: "text" %>
+              <label for="activity-name">Activity Name</label>
+            </div><!-- input-field -->
+          <% end %>
+        </div><!-- row -->
+      </div><!-- card-content -->
+
+      <div class="card-action">
+        <%= button_tag type: "submit", class: "btn waves-effect waves-light", name: "action" do %>
+          Update<span><i class="material-icons right">update</i></span>
+        <% end %>
+      </div><!-- card-action -->
+
+    </div><!-- card-panel -->
+
+  </div><!-- col -->
+</div><!-- row -->
