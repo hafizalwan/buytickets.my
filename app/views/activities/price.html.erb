@@ -1,101 +1,100 @@
 <!-- Create Package Section -->
-<div class="container">
-  <div class="row">
-    <div class="col s12">
+<div class="row">
+  <div class="col s12">
 
-      <div class="card-panel">
+    <div class="card-panel">
 
-        <%= render 'create_activity_menu' %>
+      <%= render 'create_activity_menu' %>
 
-        <div class="card-content">
-          <div id="price">
-            <div class="row">
-              <h5 class="center">Pricing</h5>
-                <%= form_for @activity, html: {class: "col s12"}, do |f| %>
-                    <div class="row">
-                      <h6>Base Price</h6>
-                      <div class="input-field col s12">
-                        <%= f.text_field :base_price, id: "base-price", type: "number", value: "0" %>
-                        <label for="base-price">Base Price</label>
-                        <span class="helper-text">Base price will be charged if there are no addon prices eg: adult, child etc. Leave it as '0' if required to choose addon.</span>
-                      </div><!-- input-field -->
-                    </div><!-- row -->
-                    <br/>
-                    <br/>
-                    <hr/>
-                    <br/>
-                    <br/>
-                    <h5 class="center">For price that doesn't require IC/Passport, use this</h5>
-                    <br/>
-                    <div class="row">
-                      <h6>Adult</h6>
-                      <div class="input-field col s12">
-                        <%= f.text_field :adult_price, id: "adult" %>
-                        <label for="my-adult">Adult</label>
-                        <span class="helper-text">Addon price for adult</span>
-                      </div><!-- input-field -->
-                    </div><!-- row -->
-                    <div class="row">
-                      <h6>Child</h6>
-                      <div class="input-field col s12">
-                        <%= f.text_field :child_price, id: "child", type: "number" %>
-                        <label for="child">Child</label>
-                        <span class="helper-text">Addon price for child</span>
-                      </div><!-- input-field -->
-                    </div><!-- row -->
-                    <br/>
-                    <br/>
-                    <hr/>
-                    <br/>
-                    <br/>
-                    <h5 class="center">For price that require IC/Passport, use this instead</h5>
-                    <br/>
-                    <div class="row">
-                      <h6>Malaysian, adult</h6>
-                      <div class="input-field col s12">
-                        <%= f.text_field :my_adult_price, id: "my-adult", type: "number" %>
-                        <label for="my-adult">Malaysian adult</label>
-                        <span class="helper-text">Addon price for MY adult</span>
-                      </div><!-- input-field -->
-                    </div><!-- row -->
-                    <div class="row">
-                      <h6>Malaysian, child</h6>
-                      <div class="input-field col s12">
-                        <%= f.text_field :my_child_price, id: "my-child", type: "number" %>
-                        <label for="my-child">Malaysian child</label>
-                        <span class="helper-text">Addon price for MY child</span>
-                      </div><!-- input-field -->
-                    </div><!-- row -->
-                    <div class="row">
-                      <h6>International, adult</h6>
-                      <div class="input-field col s12">
-                        <%= f.text_field :int_adult_price, id: "int-adult", type: "number" %>
-                        <label for="int-adult">International adult</label>
-                        <span class="helper-text">Addon price for international adult</span>
-                      </div><!-- input-field -->
-                    </div><!-- row -->
-                    <div class="row">
-                      <h6>International, child</h6>
-                      <div class="input-field col s12">
-                        <%= f.text_field :int_child_price, id: "int-child", type: "number" %>
-                        <label for="int-child">International child</label>
-                        <span class="helper-text">Addon price for International child</span>
-                      </div><!-- input-field -->
-                    </div><!-- row -->
-                <% end %>
-            </div><!-- row -->
-          </div><!-- price -->
-
+      <div class="card-content">
+        <div id="price">
           <div class="row">
-            <div class="col s12">
-              <%= button_tag type: "submit", class: "btn waves-effect waves-light", name: "action" do %>
-                Update<span><i class="material-icons right">update</i></span>
-              <% end %>
-            </div><!-- col -->
-          </div><!-- row -->
+            <h5 class="center">Pricing</h5>
+              <%= form_for @activity, class: "col s12" do |f| %>
+                  <div class="row">
+                    <h6>Base Price</h6>
+                    <div class="input-field col s12">
+                      <%= f.text_field :base_price, id: "base-price", type: "number", value: "0" %>
+                      <label for="base-price">Base Price</label>
+                      <span class="helper-text">Base price will be charged if there are no addon prices eg: adult, child etc. Leave it as '0' if required to choose addon.</span>
+                    </div><!-- input-field -->
+                  </div><!-- row -->
+                  <br/>
+                  <br/>
+                  <hr/>
+                  <br/>
+                  <br/>
+                  <h5 class="center">For price that doesn't require IC/Passport, use this</h5>
+                  <br/>
+                  <div class="row">
+                    <h6>Adult</h6>
+                    <div class="input-field col s12">
+                      <%= f.text_field :adult_price, id: "adult" %>
+                      <label for="my-adult">Adult</label>
+                      <span class="helper-text">Addon price for adult</span>
+                    </div><!-- input-field -->
+                  </div><!-- row -->
+                  <div class="row">
+                    <h6>Child</h6>
+                    <div class="input-field col s12">
+                      <%= f.text_field :child_price, id: "child", type: "number" %>
+                      <label for="child">Child</label>
+                      <span class="helper-text">Addon price for child</span>
+                    </div><!-- input-field -->
+                  </div><!-- row -->
+                  <br/>
+                  <br/>
+                  <hr/>
+                  <br/>
+                  <br/>
+                  <h5 class="center">For price that require IC/Passport, use this instead</h5>
+                  <br/>
+                  <div class="row">
+                    <h6>Malaysian, adult</h6>
+                    <div class="input-field col s12">
+                      <%= f.text_field :my_adult_price, id: "my-adult", type: "number" %>
+                      <label for="my-adult">Malaysian adult</label>
+                      <span class="helper-text">Addon price for MY adult</span>
+                    </div><!-- input-field -->
+                  </div><!-- row -->
+                  <div class="row">
+                    <h6>Malaysian, child</h6>
+                    <div class="input-field col s12">
+                      <%= f.text_field :my_child_price, id: "my-child", type: "number" %>
+                      <label for="my-child">Malaysian child</label>
+                      <span class="helper-text">Addon price for MY child</span>
+                    </div><!-- input-field -->
+                  </div><!-- row -->
+                  <div class="row">
+                    <h6>International, adult</h6>
+                    <div class="input-field col s12">
+                      <%= f.text_field :int_adult_price, id: "int-adult", type: "number" %>
+                      <label for="int-adult">International adult</label>
+                      <span class="helper-text">Addon price for international adult</span>
+                    </div><!-- input-field -->
+                  </div><!-- row -->
+                  <div class="row">
+                    <h6>International, child</h6>
+                    <div class="input-field col s12">
+                      <%= f.text_field :int_child_price, id: "int-child", type: "number" %>
+                      <label for="int-child">International child</label>
+                      <span class="helper-text">Addon price for International child</span>
+                    </div><!-- input-field -->
+                  </div><!-- row -->
 
-        </div><!-- card-content -->
-      </div><!-- card-panel -->
-    </div><!-- col -->
-  </div><!-- row -->
-</div><!-- container -->
+                  <div class="row">
+                    <div class="col s12">
+                      <%= button_tag type: "submit", class: "btn waves-effect waves-light", name: "action" do %>
+                        Update<span><i class="material-icons right">update</i></span>
+                      <% end %>
+                    </div><!-- col -->
+                  </div><!-- row -->
+
+              <% end %>
+          </div><!-- row -->
+        </div><!-- price -->
+
+      </div><!-- card-content -->
+    </div><!-- card-panel -->
+  </div><!-- col -->
+</div><!-- row -->
