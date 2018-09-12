@@ -14,15 +14,15 @@
               <%= f.text_field :name, id: "activity-name", type: "text" %>
               <label for="activity-name">Activity Name</label>
             </div><!-- input-field -->
+
+            <div><%= f.submit "Create", class: "btn waves-effect waves-light" %></div>
+
           <% end %>
         </div><!-- row -->
+
       </div><!-- card-content -->
 
-      <div class="card-action">
-        <%= button_tag type: "submit", class: "btn waves-effect waves-light", name: "action" do %>
-          Update<span><i class="material-icons right">update</i></span>
-        <% end %>
-      </div><!-- card-action -->
+
 
     </div><!-- card-panel -->
 
