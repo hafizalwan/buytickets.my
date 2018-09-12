@@ -15,7 +15,8 @@ class ActivitiesController < ApplicationController
     if @activity.save
       redirect_to activities_listing_path(@activity), notice: "Saved.."
     else
-      render :new, notice: "Something is wrong somewhere.."
+      flash[:alert] = "Something is wrong.."
+      render :new
     end
   end
 
