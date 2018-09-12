@@ -9,7 +9,7 @@
       </div><!-- card-content -->
       <div class="card-content">
         <div class="row">
-          <%= form_for @activity, html: {class: "col s12"} do |f| %>
+          <%= form_for @activity, class: "col s12" do |f| %>
             <div class="input-field col s12">
               <%= f.text_field :name, id: "activity-name", type: "text" %>
               <label for="activity-name">Activity Name</label>
