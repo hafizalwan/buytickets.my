@@ -13,7 +13,7 @@
   def create
     @activity = current_user.activities.build(activity_params)
     if @activity.save
-      redirect_to listing_activity_path(@activity), notice: "Saved.."
+      redirect_to details_activity_path(@activity), notice: "Saved.."
     else
       flash[:alert] = "Something is wrong.."
       render :new
