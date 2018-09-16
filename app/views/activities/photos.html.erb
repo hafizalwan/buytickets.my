@@ -18,10 +18,12 @@
               <div class="file-field input-field">
                 <div class="btn">
                     <span>Upload</span>
-                    <input type="file" multiple>
+                    <!-- <input type="file" multiple> -->
+                    <%= f.file_field :images, type: "file", multiple: true %>
                 </div><!-- btn -->
                 <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload one or more photos">
+                    <!-- <input class="file-path validate" type="text" placeholder="Upload one or more photos"> -->
+                    <%= f.text_field :images, class: "file-path validate", type: "text", placeholder: "Upload one or more photos" %>
                 </div><!-- file-path-wrapper -->
               </div><!-- file input-field -->
 
