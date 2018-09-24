@@ -11,6 +11,8 @@ gem 'devise', '~> 4.5'
 gem 'materialize-sass', '~> 1.0.0.rc1'
 gem 'font-awesome-sass', '~> 5.3.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'billplz-api', '~> 0.2.1'
+gem 'toastr-rails', '~> 1.0', '>= 1.0.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -33,8 +35,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'
-
-gem 'toastr-rails', '~> 1.0', '>= 1.0.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
