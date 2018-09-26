@@ -6,7 +6,7 @@ This application is using the following :
 
 * Rails version 5.2.1
 
-* MySQL for production on AWS
+* MySQL 5.7.22 for production on AWS
 
 * materialize-sass version 1.0.0.rc1
 
